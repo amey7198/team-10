@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+
+<title>Registration</title>
+
+<style>
+body{
+		background-image: url("agri.jpg");
+		background-repeat:no-repeat;
+		background-size:cover;
+		img{
+		opacity:0.7;
+		}
+	}
+</style>
+
+</head>
+
+<body>
+
+<form action="main.html">
+
+<h2 align="center">Registration form</h2>
+
+<table border="7" align="center" width="800" bgcolor="grey" >
+
+
+
+<tr>
+
+<th>Name</th>
+
+<td><input type="text" name="fn" id="fn" maxlength="30" title="Type your name here" placeholder="Name" required/></td>
+
+</tr>
+
+<tr>
+
+<th>Mobile Number</th>
+
+<td><input type="tel" pattern="[0-9]{10}" required /></td>
+
+</tr>
+
+<tr>
+<th>E-mail</th>
+<td><input type="email" id="email"
+       pattern=".+@gmail.com" size="30" required></td>
+</tr>
+<tr>
+
+<th>Gender</th>
+
+<td>
+
+Male<input type="radio" name="g" value="m" checked/>
+Female<input type="radio" name="g" value="f"/>
+Other<input type="radio" name="g" value="o"/>
+
+</td>
+</tr>
+
+<tr>
+
+<th>Select your DOB</th>
+
+<td><input type="date"/></td>
+
+</tr>
+
+<th>Address</th>
+
+<td><textarea rows="3" cols="22"></textarea></td>
+
+</tr>
+
+<tr>
+
+<th>Select your State</th>
+
+<td>
+
+<select name="state">
+
+<option value="" selected="selected" disabled="disabled">State</option>
+
+<option value="1">Maharashtra</option>
+
+<option value="2">Tamilnadu</option>
+
+<option value="3">Punjab</option>
+
+</select>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td colspan="2" align="center"><input type="submit" value="Save My Data"/>
+
+<input type="reset" value="Reset Data"/>
+
+</td>
+
+</tr>
+
+</table>
+
+</form>
+
+<h1>This is test</h1>
+
+</body>
+
+</html>
